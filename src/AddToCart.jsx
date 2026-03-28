@@ -10,9 +10,9 @@ const AddToCart = (props) => {
     return (
         <>
             {cartSelector.some((cartitem) => cartitem.id === props.product.id) ? ( 
-                <button className="add-to-cart" onClick={() => dispatch(removeitem(props.product))}>Remove from Cart</button>
+                <button className="add-to-cart " onClick={() => dispatch(removeitem(props.product))}>Remove from Cart</button>
             ) : (
-                <button className="add-to-cart" onClick={() => dispatch(additem(props.product))}>Add to Cart </button>
+                <button className="add-to-cart " onClick={() => dispatch(additem(props.product))}>Add to Cart </button>
             )
             }
         </>
